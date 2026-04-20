@@ -1,5 +1,6 @@
 <a href=12.logout.php>[登出]</a><br>
 <?php
+#原本的佈告欄範例，結合session功能後，變成只能登入後，才能夠瀏覽
 error_reporting(0); #error_reporting(0)：取消錯誤或警告
 session_start(); #啟動 Session，取得登入狀態
 if (!$_SESSION["id"]) {
@@ -35,4 +36,5 @@ else{
     }
     echo "</table>";    
 }
+#佈告欄總表為所有程式的會合處，需擁有以下功能 登出功能 使用者管理功能 新增、刪除、編輯佈告欄的功能
 ?>
