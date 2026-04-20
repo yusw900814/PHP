@@ -1,0 +1,14 @@
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>登入範例</title>
+    </head>
+    <body>
+        <form method=post action="10.login.php"> #action：呼叫的php程式 method:參數傳遞方式 POST：使用環境變數傳遞，不會顯示在呼叫URL中，適合密碼類的參數傳遞 GET：使用URL傳遞參數
+            帳號：<input type=text name="id"><br /> #name：傳遞參數的變數名稱
+            密碼：<input type=password name="pwd"><p></p> #name：傳遞參數的變數名稱
+            <input type=submit value="登入"> <input type=reset value="清除">
+            
+        </form>
+    </body>
+</html>
